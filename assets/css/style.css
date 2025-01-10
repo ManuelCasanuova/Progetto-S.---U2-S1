@@ -1,3 +1,4 @@
+/*RESET INIZIALE*/
 *,
 *::before,
 *::after {
@@ -27,6 +28,8 @@ a {
 .laterale {
   padding-inline: 10%;
 }
+
+/*HEADER*/
 
 header {
   background-color: #ffc017;
@@ -83,9 +86,17 @@ div > button {
   margin-bottom: 50px;
 }
 
+/*HERO*/
+
 #hero {
   background-color: #ffc017;
   border-bottom: 1px solid grey;
+  position: relative;
+}
+
+.m {
+  position: absolute;
+  margin-left: auto;
 }
 
 section {
