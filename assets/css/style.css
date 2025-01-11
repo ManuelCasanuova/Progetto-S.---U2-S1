@@ -33,14 +33,18 @@ a {
 
 header {
   background-color: #ffc017;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
+  position: sticky;
+  top: 0;
+  z-index: 900;
 }
 
 header nav {
-  min-width: 75px;
+  min-height: 75px;
   display: flex;
   flex: row;
-  align-items: middle;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container {
@@ -54,6 +58,7 @@ header nav {
 .container nav ul li a {
   font-weight: 300;
   font-size: 0.8rem;
+  margin-left: 10px;
 }
 
 .container nav button {
@@ -62,6 +67,8 @@ header nav {
   background-color: black;
   color: white;
   border-radius: 50px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 .container > h2 {
@@ -84,6 +91,7 @@ div > button {
   color: white;
   border-radius: 50px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 /*HERO*/
@@ -92,36 +100,40 @@ div > button {
   background-color: #ffc017;
   border-bottom: 1px solid grey;
   position: relative;
+  overflow: hidden;
 }
 
 .m {
   position: absolute;
-  margin-left: auto;
+  right: 0;
+}
+
+.m img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 section {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   margin-bottom: 30px;
 }
 
-.treding {
-  display: inline-block;
-}
-
 h4 {
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.8rem;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
 }
 
 .flex {
   display: flex;
-  flex: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .card {
+  width: 20vw;
+  min-height: 8vw;
   display: flex;
   flex: column;
   gap: 20px;
@@ -133,22 +145,46 @@ h4 {
   color: lightgray;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 8vw;
+}
+
 .profilo {
-  width: 35px;
-  height: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fotoprofilo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.picture1,
+.picture {
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   overflow: hidden;
-  display: inline-block;
+  margin-right: 0.5rem;
 }
 
-.profilo > img {
+.picture {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+.picture1 img,
+.picture img {
+  max-width: 100%;
   object-fit: cover;
-}
-
-.autore {
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 10px;
 }
 
 .articolo {
@@ -160,46 +196,72 @@ h4 {
 .estratto {
   font-weight: 100;
   font-size: 0.8rem;
-  margin-bottom: 10px;
   color: grey;
   display: inline-block;
+  padding-right: 0.2rem;
 }
 
-.stella {
-  display: inline-block;
+.stellar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-aside {
+.flexed {
   display: flex;
   flex-direction: row;
 }
 
-.flexio {
+.schede {
   display: flex;
   flex-direction: column;
   width: 50%;
+  justify-content: space-between;
 }
 
-.flexio {
+.card.n2 {
+  width: 100%;
+  max-height: 15vw;
   display: flex;
-  flex-direction: row1;
+  flex: column;
+  gap: 10px;
+  align-items: center;
+  margin: 1vw 0;
+}
+
+.fotoarticolo {
+  width: 30%;
+  max-height: 15vw;
+}
+
+.fotoarticolo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #menu {
-  padding: 10px;
-  background-color: blue;
-  width: 100px;
-  height: 10px;
-  margin-right: 30px;
-  order: 1;
+  width: 100%;
+  margin-top: 1vw;
 }
 
-.farticolo {
-  width: 80px;
-  height: 20px;
-  overflow: hidden;
+#menu h4 {
+  font-weight: 600;
 }
 
-.farticolo > img {
-  object-fit: cover;
+.lista li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listafooter {
+  margin-top: 1vw;
+}
+
+.listafooter li {
+  display: inline-block;
+}
+
+.listafooter li a {
+  color: gray;
 }
