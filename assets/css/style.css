@@ -32,6 +32,7 @@ a {
 ul {
   list-style-type: none;
 }
+
 /*HEADER*/
 
 header {
@@ -74,29 +75,6 @@ header nav {
   margin-left: 10px;
 }
 
-.container > h2 {
-  font-family: "Spectral", serif;
-  font-size: 5rem;
-  padding-top: 50px;
-  margin-bottom: 30px;
-}
-
-.container > h3 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-
-div > button {
-  border: none;
-  padding: 0.7rem 1rem;
-  background-color: black;
-  color: white;
-  border-radius: 50px;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
 .changeColor {
   background-color: white;
   transition: background-color 0.8s;
@@ -121,6 +99,19 @@ div > button {
   overflow: hidden;
 }
 
+.container > h2 {
+  font-family: "Spectral", serif;
+  font-size: 5rem;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.container > h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
 .m {
   position: absolute;
   right: 0;
@@ -135,6 +126,18 @@ section {
   border-bottom: 1px solid grey;
   margin-bottom: 30px;
 }
+
+div > button {
+  border: none;
+  padding: 0.7rem 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+/*SECTION GRIGLIA*/
 
 h4 {
   display: flex;
