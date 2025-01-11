@@ -97,19 +97,37 @@ header nav {
   border-bottom: 1px solid grey;
   position: relative;
   overflow: hidden;
+  min-height: 30vw;
 }
 
-.container > h2 {
+.container2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container2 > h2 {
   font-family: "Spectral", serif;
-  font-size: 5rem;
+  font-size: 9rem;
   padding-top: 50px;
   margin-bottom: 30px;
 }
 
-.container > h3 {
-  font-size: 1.5rem;
+.container2 > h3 {
+  font-size: 2rem;
   font-weight: 300;
   margin-bottom: 30px;
+}
+
+div > button {
+  border: none;
+  padding: 0.7rem 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  max-width: 10vw;
 }
 
 .m {
@@ -127,14 +145,10 @@ section {
   margin-bottom: 30px;
 }
 
-div > button {
-  border: none;
-  padding: 0.7rem 1rem;
-  background-color: black;
-  color: white;
-  border-radius: 50px;
-  margin-bottom: 50px;
-  cursor: pointer;
+@media screen and (max-width: 700px) {
+  .m {
+    right: -500px;
+  }
 }
 
 /*SECTION GRIGLIA*/
