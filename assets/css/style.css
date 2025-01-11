@@ -61,11 +61,12 @@ header nav {
 
 .container nav ul li a {
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1vw;
   margin-left: 10px;
 }
 
 .container nav button {
+  font-size: 1vw;
   border: none;
   padding: 0.7rem 1rem;
   background-color: black;
@@ -103,23 +104,24 @@ header nav {
 .container2 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
 }
 
 .container2 > h2 {
   font-family: "Spectral", serif;
-  font-size: 9rem;
+  font-size: 5rem;
   padding-top: 50px;
   margin-bottom: 30px;
 }
 
 .container2 > h3 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 30px;
 }
 
 div > button {
+  font-size: 1.2vw;
   border: none;
   padding: 0.7rem 1rem;
   background-color: black;
@@ -127,51 +129,46 @@ div > button {
   border-radius: 50px;
   margin-bottom: 50px;
   cursor: pointer;
-  max-width: 10vw;
+  max-width: 15.5vw;
 }
 
 .m {
   position: absolute;
-  right: 0;
+  right: -25px;
 }
 
 .m img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 section {
-  border-bottom: 1px solid grey;
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 700px) {
-  .m {
-    right: -500px;
-  }
+  border: 1px solid rgba(211, 211, 211, 0.646);
 }
 
 /*SECTION GRIGLIA*/
 
 h4 {
+  padding-top: 1.5vw;
   display: flex;
   align-items: center;
   margin-bottom: 0.3rem;
+  text-transform: uppercase;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-between;
 }
 
 .card {
-  width: 20vw;
+  flex: 1 1 33.333%;
   min-height: 8vw;
   display: flex;
   flex: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .numero {
@@ -223,18 +220,28 @@ h4 {
   object-fit: cover;
 }
 
+.autore {
+  font-size: 0.9vw;
+}
+
 .articolo {
-  font-weight: bold;
+  font-size: 1.2vw;
+  font-weight: 800;
+}
+
+article .articolo {
+  font-size: 1.7vw;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
 .data,
 .estratto {
   font-weight: 100;
-  font-size: 0.8rem;
+  font-size: 1vw;
   color: grey;
   display: inline-block;
-  padding-right: 0.2rem;
+  padding-right: 0.8vw;
 }
 
 .stellar {
@@ -266,9 +273,11 @@ h4 {
   flex-direction: column;
   width: 60%;
   justify-content: space-between;
+  height: 100%;
 }
 
 .card.n2 {
+  flex: 1 1 100%;
   width: 100%;
   max-height: 15vw;
   display: flex;
@@ -279,7 +288,7 @@ h4 {
 }
 
 .fotoarticolo {
-  width: 30%;
+  flex: 1 1 30%;
   max-height: 15vw;
 }
 
@@ -317,6 +326,8 @@ h4 {
 }
 
 .lista ul li button {
+  flex: 1 1 33.333%;
+  font-size: 1vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
   background-color: transparent;
@@ -329,6 +340,7 @@ h4 {
 
 .listafooter {
   margin-top: 1vw;
+  width: 100%;
 }
 
 .listafooter li {
@@ -336,7 +348,39 @@ h4 {
 }
 
 .listafooter li a {
+  font-size: 1vw;
   color: gray;
   padding-right: 1vw;
   line-height: 1.5vw;
 }
+/*
+@media screen and (max-width: 700px) {
+  .m {
+    right: -500px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  nav ul li a {
+    display: none;
+  }
+
+  .m {
+    display: none;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    min-height: 8vw;
+    display: flex;
+    flex: column;
+    gap: 18px;
+  }
+  .flexed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+*/
