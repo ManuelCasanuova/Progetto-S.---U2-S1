@@ -313,7 +313,7 @@ h4 {
 .lista ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 1vw 1vw;
+  justify-content: space-between;
 }
 
 .lista ul li button {
@@ -321,9 +321,10 @@ h4 {
   margin-bottom: 1vw;
   background-color: transparent;
   color: gray;
-  border: 1px solid rgba(211, 211, 211, 0.493);
+  border: 1px solid rgba(211, 211, 211, 0.646);
   border-radius: 3px;
-  padding: 0.5vw 0.8vw;
+  padding: 0.7vw;
+  cursor: pointer;
 }
 
 .listafooter {
@@ -337,4 +338,5 @@ h4 {
 .listafooter li a {
   color: gray;
   padding-right: 1vw;
+  line-height: 1.5vw;
 }
